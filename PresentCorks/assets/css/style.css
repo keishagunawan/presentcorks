@@ -3,6 +3,12 @@
     padding-top: 100px;
 }
 
+.ourproduct-text {
+    margin-left: 70px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .photos {
     position: relative;
     width: 100%;
@@ -27,6 +33,10 @@
 .photos img.pos5 { left: 100%; }
 
 /*PRODUCT*/
+#banner-product {
+    padding-top: 50px;
+}
+
 .margin{
     margin-left: 200px; 
     margin-right: 200px;
@@ -67,15 +77,32 @@ price{
     margin-right: 0px;
 }
 .grid-collabs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 80px;
 }
 
 .rounded-image{
     border-radius: 50%;
 }
+
+collab {
+    font-family: /* your font family here */;
+    font-size: /* your font size here */;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
 
 /*PRODUCT-ACCESSORIES*/
 .grid-accessories{
@@ -87,8 +114,8 @@ price{
 }
 
 accessories{
-    font-family:
-    font-size:
+    font-family: /* your font family here */;
+    font-size: /* your font size here */;
     font-weight: bold;
     display: flex;
     align-items: center;
