@@ -1,5 +1,5 @@
 change directory:
-cd nyt
+cd presentcorks
 
 buat branch background : git branch calandra
 
@@ -11,6 +11,8 @@ git pull origin main (seallu update codingan main)
 
 lalu koding aja buat file background
 
+
+
 masukin ke branch:
 git checkout calandra
 
@@ -19,7 +21,7 @@ git commit -m "mesg apapun"
 git push origin calandra
 
 
-checkout ke branch master/main
+checkout ke branch main
 git checkout main
 
 git pull origin main (selalu update codingan main)
