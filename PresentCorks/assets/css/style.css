@@ -72,12 +72,23 @@ price{
 
 
 /*PRODUCT-COLLABS*/
+#collabs {
+    background-color: black;
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+
 .margin-collabs{
     margin-left: 0px; 
     margin-right: 0px;
 }
+
 .grid-collabs{
     margin-bottom: 80px;
+}
+
+.grid-collabs:hover img {
+    transform: scale(1.3);
 }
 
 .rounded-image{

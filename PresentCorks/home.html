@@ -42,6 +42,9 @@
       <div class="ourproduct-text">
         <p>Our Products<br>Choose your Canteen</p>
       </div>
+      <div class="chooseyour-text">
+        <
+      </div>
 
         <div class="photos">
             <img src="assets/image/gryffindor.png" alt="Image 1" class="pos1">
@@ -50,26 +53,9 @@
             <img src="assets/image/gardenparty.png" alt="Image 4" class="pos4">
             <img src="assets/image/luxezebra.png" alt="Image 5" class="pos5">
         </div>
-
-        <script>
-            const images = document.querySelectorAll('.photos img');
-            
-            function changePosition() {
-                // Menyimpan referensi gambar terakhir
-                const lastImageClass = images[0].className;
-
-                // Menggeser kelas setiap gambar
-                for (let i = 0; i < images.length - 1; i++) {
-                    images[i].className = images[i + 1].className;
-                }
-
-                // Memindahkan gambar pertama ke posisi terakhir
-                images[images.length - 1].className = lastImageClass;
-            }
-
-            setInterval(changePosition, 2000);
-        </script>
     </section>
+    
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
