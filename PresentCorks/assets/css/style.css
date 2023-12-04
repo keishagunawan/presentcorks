@@ -132,3 +132,22 @@ accessories{
     align-items: center;
     justify-content: center;
 }
+
+/* Kevin CSS*/
+#image-sequence {
+    width: 100%;
+    height: auto;
+    max-width: 1500px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  img.kevin {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  img.active {
+    display: block;
+  }
