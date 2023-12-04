@@ -32,6 +32,27 @@
 .photos img.pos4 { left: 66.66%; }
 .photos img.pos5 { left: 100%; }
 
+.button-ourproduct {
+    background-color: white;
+    border: 5px solid black;
+    color: black;
+    border-radius: 2px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.center-button-ourproduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
 /*PRODUCT*/
 #banner-product {
     padding-top: 50px;
