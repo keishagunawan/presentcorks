@@ -1,3 +1,42 @@
+/* Kevin JS-ANIMATION-1*/
+const imagesKevin = document.querySelectorAll('#image-sequence img');
+let currentIndex = 0;
+let isAnimating = false;
+
+function showNextImage() {
+  if (!isAnimating) {
+    isAnimating = true;
+    setTimeout(() => {
+      imagesKevin[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % imagesKevin.length;
+      imagesKevin[currentIndex].classList.add('active');
+      isAnimating = false;
+    }, 100); // Adjust the delay (in milliseconds) as needed
+  }
+}
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= -300 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Function to handle scroll events
+function handleScroll() {
+  if (isInViewport(document.getElementById('image-sequence'))) {
+    showNextImage();
+  }
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+// Initially check for images in the viewport
+handleScroll();
+
 /*ANIMATION-2*/
 const images = document.querySelectorAll('.photos img');
             
@@ -136,42 +175,3 @@ document.addEventListener('DOMContentLoaded', function () {
                         
     function hoverOutmatrix(img){
         img.src = "assets/image/collabthematrix.png"}
-
-/* Kevin JS*/
-const imagesKevin = document.querySelectorAll('#image-sequence img');
-let currentIndex = 0;
-let isAnimating = false;
-
-function showNextImage() {
-  if (!isAnimating) {
-    isAnimating = true;
-    setTimeout(() => {
-      imagesKevin[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex + 1) % imagesKevin.length;
-      imagesKevin[currentIndex].classList.add('active');
-      isAnimating = false;
-    }, 100); // Adjust the delay (in milliseconds) as needed
-  }
-}
-
-// Function to check if an element is in the viewport
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= -300 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-  );
-}
-
-// Function to handle scroll events
-function handleScroll() {
-  if (isInViewport(document.getElementById('image-sequence'))) {
-    showNextImage();
-  }
-}
-
-// Add scroll event listener
-window.addEventListener('scroll', handleScroll);
-
-// Initially check for images in the viewport
-handleScroll();
