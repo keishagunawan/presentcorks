@@ -33,7 +33,90 @@
 .photos img.pos5 { left: 100%; }
 
 /*HOME-ANIMATION-DESCRIPTION*/
+.homepage-desc {
+    background-color: black;
+    height: 100vh;
+    padding: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 1;
+}
 
+.sub-heading {
+    font-family: 'DM Sans';
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: white;
+    margin-top: 0;
+    opacity: 1;
+    
+}
+.sub-heading-1{
+    animation: moveAndReturn1 2s linear 0s 1 normal backwards;
+}
+
+.sub-heading-3{
+    animation: moveAndReturn3 2s linear 0s 1 normal backwards;
+
+}
+@keyframes moveAndReturn1 {
+    0% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+
+    75% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveAndReturn3 {
+    0% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+
+
+    75% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color: #BCC6CC;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+.desc.show {
+    opacity: 1;
+}
 
 /*PRODUCT*/
 #banner-product {
