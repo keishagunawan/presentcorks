@@ -16,6 +16,60 @@ const images = document.querySelectorAll('.photos img');
 
             setInterval(changePosition, 2000);
 
+/*ANIMATION-3*/
+document.addEventListener('DOMContentLoaded', function () {
+    var homepageDesc = document.querySelector('.homepage-desc');
+
+    // Init ScrollMagic
+    var controller = new ScrollMagic.Controller();
+
+    // Create GSAP timeline for sub-heading animations
+    var subHeadingTimeline = gsap.timeline();
+    subHeadingTimeline.fromTo('.sub-heading-1', { marginTop: 0 }, { marginTop: 50, opacity: 1 });
+    subHeadingTimeline.fromTo('.sub-heading-2', { marginTop: 0 }, { marginTop: 30, opacity: 1 });
+    subHeadingTimeline.fromTo('.sub-heading-3', { marginTop: 0 }, { marginTop: 60, opacity: 1 });
+
+    // Scene for revealing sub-headings
+    var subHeadingScene = new ScrollMagic.Scene({
+        triggerElement: '.homepage-desc',
+        triggerHook: 0,
+        duration: '100%' // Adjust duration as needed
+    })
+        .setTween(subHeadingTimeline)
+        .addTo(controller);
+
+    // Function to create scenes for each sub-heading and desc pair
+    function createScene(subHeadingClass, descClass) {
+        var subHeading = document.querySelector(subHeadingClass);
+        var desc = document.querySelector(descClass);
+
+        // Scene for sub-heading and desc
+        var scene = new ScrollMagic.Scene({
+            triggerElement: subHeading,
+            triggerHook: 0.7, // Set triggerHook based on your preference
+            duration: '100%', // Set the duration as needed
+        })
+            .setTween(gsap.fromTo(desc, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 },{ opacity: 1, y: 0, duration: 0.6 }))
+            .addTo(controller);
+    }
+
+    // Create scenes for each sub-heading and desc pair
+    createScene('.sub-heading-1', '.desc-1');
+    createScene('.sub-heading-2', '.desc-2');
+    createScene('.sub-heading-3', '.desc-3');
+
+
+    // Scene to reveal homepage-desc and pin it
+    var pinScene = new ScrollMagic.Scene({
+        triggerElement: '.homepage-desc',
+        triggerHook: 0,
+        duration: '100%' // Set the duration as needed
+    })
+        .setPin('.homepage-desc')
+        .addTo(controller);
+});
+
+
 /*PRODUCT-COLLABS*/
     function hoverd100(img){
         img.src = "assets/image/disney100logo.png"}
