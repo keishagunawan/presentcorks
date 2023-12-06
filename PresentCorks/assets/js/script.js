@@ -175,3 +175,21 @@ document.addEventListener('DOMContentLoaded', function () {
                         
     function hoverOutmatrix(img){
         img.src = "assets/image/collabthematrix.png"}
+
+/* COLOR-INTERACTIVE */
+function changeContentColorInteractive(imageSrc, newText, element) {
+    document.getElementById('image').src = imageSrc;
+    document.getElementById('text').textContent = newText;
+    document.getElementById('text').className = 'new-text-style';
+
+    var gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach(function(item) {
+        item.classList.remove('color-interactive-active');
+    });
+
+    element.classList.add('color-interactive-active');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.grid-item').click();
+});

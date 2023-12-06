@@ -26,7 +26,7 @@
 .photos img.pos2 { left: 0; }
 .photos img.pos3 {
     left: 33.33%;
-    transform: scale(1.3); /* Membuat gambar sedikit lebih besar */
+    transform: scale(1.3); /* Membuat gambar lebih besar */
     z-index: 1; /* Memastikan gambar ini berada di atas gambar lain */
 }
 .photos img.pos4 { left: 66.66%; }
@@ -152,6 +152,10 @@
     margin-right: 200px;
 }
 
+.product-title{
+    font-family: 'DM Sans', sans-serif;
+}
+
 /*PRODUCT-CANTEEN*/
 .grid-canteen{
     border: 2px solid lightgray; /* Mengatur border */
@@ -166,18 +170,19 @@
   }
 
 series{
-    font-family:
-    font-size:
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 color{
-    font-family:
-    font-size:
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 15px;
 }
 
 price{
-    font-family:
-    font-size:
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -235,13 +240,44 @@ a:visited{
 }
 
 accessories{
-    font-family: /* your font family here */;
-    font-size: /* your font size here */;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/*COLOR-INTERACTIVE*/
+#color-interactive{
+    margin-top: 20px;
+}
+
+.content-color {
+    text-align: center;
+}
+.colordesc-interactive {
+    font-family: Arial, sans-serif; /* Contoh font-family */
+    font-size: 20px; /* Contoh font-size */
+}
+
+.image-color-interactive {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin-bottom: 10px; /* Jarak antar grid item */
+}
+
+.image-color-interactive:hover {
+    background-color: #e0e0e0;
+}
+
+.color-interactive-active {
+    background-color: #d0d0d0; /* Warna lebih tua untuk grid aktif */
+}
+
 
 /* Kevin CSS*/
 #image-sequence {
