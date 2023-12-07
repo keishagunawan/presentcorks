@@ -248,36 +248,6 @@ accessories{
     justify-content: center;
 }
 
-/*COLOR-INTERACTIVE*/
-#color-interactive{
-    margin-top: 20px;
-}
-
-.content-color {
-    text-align: center;
-}
-.colordesc-interactive {
-    font-family: Arial, sans-serif; /* Contoh font-family */
-    font-size: 20px; /* Contoh font-size */
-}
-
-.image-color-interactive {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    margin-bottom: 10px; /* Jarak antar grid item */
-}
-
-.image-color-interactive:hover {
-    background-color: #e0e0e0;
-}
-
-.color-interactive-active {
-    background-color: #d0d0d0; /* Warna lebih tua untuk grid aktif */
-}
-
 
 /* Kevin CSS*/
 #image-sequence {
@@ -363,6 +333,34 @@ accessories{
     color: white;
     font-size: 20px; /* Adjust the font size as needed */
 }
+
+/*COLOR-INTERACTIVE*/
+.content-color-color-interactive {
+    text-align: center;
+}
+.colordesc-interactive {
+    font-family: Arial, sans-serif; /* Contoh font-family */
+    font-size: 20px; /* Contoh font-size */
+    margin-top: 100px;
+}
+
+.grid-item-color-interactive {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin-bottom: 10px; /* Jarak antar grid item */
+}
+
+.grid-item-color-interactive:hover {
+    background-color: #e0e0e0;
+}
+
+.color-interactive-active-color-interactive {
+    background-color: #d0d0d0; /* Warna lebih tua untuk grid aktif */
+}
+
 
 /* Media Query for smaller screens */
 @media only screen and (max-width: 600px) {

@@ -176,23 +176,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function hoverOutmatrix(img){
         img.src = "assets/image/collabthematrix.png"}
 
-/* COLOR-INTERACTIVE */
-function changeContentColorInteractive(imageSrc, newText, element) {
-    document.getElementById('image').src = imageSrc;
-    document.getElementById('text').textContent = newText;
-    document.getElementById('text').className = 'new-text-style';
-
-    var gridItems = document.querySelectorAll('.grid-item');
-    gridItems.forEach(function(item) {
-        item.classList.remove('color-interactive-active');
-    });
-
-    element.classList.add('color-interactive-active');
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.grid-item').click();
-});
 
 /* Animation 5 */
 document.addEventListener("DOMContentLoaded", function() {
@@ -209,4 +192,22 @@ document.addEventListener("DOMContentLoaded", function() {
             mainCircle.style.opacity = 0;
         }, 100);
     });
+});
+
+/* COLOR-INTERACTIVE */
+function changeContentColorInteractive(imageSrc, newText, element) {
+    document.getElementById('image').src = imageSrc;
+    document.getElementById('text').textContent = newText;
+    document.getElementById('text').className = 'new-text-style';
+
+    var gridItems = document.querySelectorAll('.grid-item-color-interactive');
+    gridItems.forEach(function(item) {
+        item.classList.remove('grid-item-color-interactive');
+    });
+
+    element.classList.add('grid-item-color-interactive');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.grid-item-color-interactive').click();
 });
