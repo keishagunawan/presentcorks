@@ -211,3 +211,4 @@ function changeContentColorInteractive(imageSrc, newText, element) {
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.grid-item-color-interactive').click();
 });
+
