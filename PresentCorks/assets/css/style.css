@@ -297,3 +297,97 @@ accessories{
   img.active {
     display: block;
   }
+  .sale-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#mainCircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 150px;
+    left: 150px;
+}
+
+#mainCircle span {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: grey;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#smallCircle1 {
+    bottom: 10px;
+    right: 150px;
+}
+
+#smallCircle2 {
+    bottom: 10px;
+    right: 100px;
+}
+
+#smallCircle3 {
+    bottom: 10px;
+    right: 50px;
+}
+
+.circle.active {
+    opacity: 1;
+}
+
+.circle::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    #mainCircle,
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    #smallCircle1 {
+        top: 80px;
+        right: 120px;
+    }
+
+    #smallCircle2 {
+        top: 80px;
+        right: 90px;
+    }
+
+    #smallCircle3 {
+        top: 80px;
+        right: 60px;
+    }
+
+    .circle::before {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+}

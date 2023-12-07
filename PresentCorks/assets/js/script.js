@@ -193,3 +193,20 @@ function changeContentColorInteractive(imageSrc, newText, element) {
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.grid-item').click();
 });
+
+/* Animation 5 */
+document.addEventListener("DOMContentLoaded", function() {
+    let mainCircle = document.getElementById("mainCircle");
+    let smallCircles = document.querySelectorAll(".circle");
+
+    mainCircle.addEventListener("click", function() {
+        mainCircle.classList.add("active");
+
+        setTimeout(function() {
+            smallCircles.forEach(function(circle) {
+                circle.classList.add("active");
+            });
+            mainCircle.style.opacity = 0;
+        }, 100);
+    });
+});
