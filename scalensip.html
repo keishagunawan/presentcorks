@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresentCorks</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--DM SANS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap" rel="stylesheet">
+    <!--COMFORTAA FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=DM+Sans:opsz,wght@9..40,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--SCALE & SIP-->
+    <section id="scaleNsip">
+        <div class="container-fluid" style="max-width:100%;height:auto">
+            <div class="scaleNsip-banner">
+                <img src="assets/image/bannnersns.png" alt="banner">
+                <video width="100%" height="auto" autoplay>
+                    <source src="assets/video/bannersns.mp4" type="video/mp4">
+                </video>
+           
+            </div>
+            <div class="scaleNsip-desc text-left">
+                <p>choose your bottle size &</p>
+                <p>
+                    <span class="highlight">
+                        compare
+                    </span>to collect intrest!
+                </p>
+            </div>
+            <div class="scaleNsip-interactive">
+                <div class="row justify-content-center">
+                    <!--COMPARISON 1-->
+                    <div class="col"></div>
+                    <div class = "col-5">
+                        <div class="form-group">
+                            <label for="categoryDropdown1">Collection:</label>
+                            <select class="form-control" id="categoryDropdown1" onchange="updateSubcategories(1)">
+                                <option value="category1">Artist</option>
+                                <option value="category2">Classic</option>
+                                <option value="category3">Disney</option>
+                                <option value="category4">Floral</option>
+                                <option value="category5">Harry Potter</option>
+                                <option value="category6">Print/Patterns</option>
+                                <option value="category7">Rifle Paper Co.</option>
+                                <option value="category8">Series A</option>
+                                <option value="category9">Sparkle</option>
+                                <option value="category10">Star Wars</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Second dropdown -->
+                        <div class="form-group">
+                            <label for="subcategoryDropdown1">Size:</label>
+                            <select class="form-control" id="subcategoryDropdown1" onchange="updateResultImage(1)">
+                                <!-- Options dynamically populated based on the selected category -->
+                            </select>
+                        </div>
+                        <div id="resultImage1" class="result-image1">
+                            <!-- Images will be dynamically updated based on the selected options --> 
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                    <!--COMPARISON 2-->
+                    <div class = "col-5 mb-3">
+                        <div class="form-group">
+                            <label for="categoryDropdown2">Collection:</label>
+                            <select class="form-control" id="categoryDropdown2" onchange="updateSubcategories(2)">
+                                <option value="category1">Artist</option>
+                                <option value="category2">Classic</option>
+                                <option value="category3">Disney</option>
+                                <option value="category4">Floral</option>
+                                <option value="category5">Harry Potter</option>
+                                <option value="category6">Print/Patterns</option>
+                                <option value="category7">Rifle Paper Co.</option>
+                                <option value="category8">Series A</option>
+                                <option value="category9">Sparkle</option>
+                                <option value="category10">Star Wars</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subcategoryDropdown2">Size:</label>
+                            <select class="form-control" id="subcategoryDropdown2" onchange="updateResultImage(2)">
+                                <!-- Options dynamically populated based on the selected category -->
+                            </select>
+                        </div>
+                        <!-- Resulting image -->
+                        <div id="resultImage2" class="result-image2">
+                        <!-- Images will be dynamically updated based on the selected options --> 
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                 
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

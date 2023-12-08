@@ -1,0 +1,323 @@
+/*HOME-ANIMATION-OURPRODUCT*/
+#animation-ourproduct {
+    padding-top: 100px;
+}
+
+.ourproduct-text {
+    margin-left: 70px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.photos {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+}
+.photos img {
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    object-fit: contain;
+    transition: left 0.5s ease, transform 0.5s ease;
+}
+.photos img.pos1 { left: -33.33%; }
+.photos img.pos2 { left: 0; }
+.photos img.pos3 {
+    left: 33.33%;
+    transform: scale(1.3); /* Membuat gambar sedikit lebih besar */
+    z-index: 1; /* Memastikan gambar ini berada di atas gambar lain */
+}
+.photos img.pos4 { left: 66.66%; }
+.photos img.pos5 { left: 100%; }
+
+/*HOME-ANIMATION-DESCRIPTION*/
+.homepage-desc {
+    background-color: black;
+    height: 100vh;
+    padding: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 1;
+}
+
+.sub-heading {
+    font-family: 'DM Sans';
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: white;
+    margin-top: 0;
+    opacity: 1;
+    
+}
+.sub-heading-1{
+    animation: moveAndReturn1 2s linear 0s 1 normal backwards;
+}
+
+.sub-heading-3{
+    animation: moveAndReturn3 2s linear 0s 1 normal backwards;
+
+}
+@keyframes moveAndReturn1 {
+    0% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+
+    75% {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveAndReturn3 {
+    0% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+
+
+    75% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    color: #BCC6CC;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+.desc.show {
+    opacity: 1;
+}
+
+/*PRODUCT*/
+#banner-product {
+    padding-top: 50px;
+}
+
+.margin{
+    margin-left: 200px; 
+    margin-right: 200px;
+}
+
+/*PRODUCT-CANTEEN*/
+.grid-canteen{
+    border: 2px solid lightgray; /* Mengatur border */
+    padding: 10px; /* Memberi ruang di dalam border */
+    margin-bottom: 15px;
+    border-radius: 5px; /* Membuat border menjadi bulat */
+}
+
+.image-center {
+    display: flex;
+    justify-content: center;
+  }
+
+series{
+    font-family:
+    font-size:
+}
+
+color{
+    font-family:
+    font-size:
+}
+
+price{
+    font-family:
+    font-size:
+}
+
+
+/*PRODUCT-COLLABS*/
+#collabs {
+    background-color: black;
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+
+.margin-collabs{
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+
+.grid-collabs{
+    margin-bottom: 80px;
+}
+
+.grid-collabs:hover img {
+    transform: scale(1.3);
+}
+
+.rounded-image{
+    border-radius: 50%;
+}
+
+collab {
+    font-family: /* your font family here */;
+    font-size: /* your font size here */;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*PRODUCT-ACCESSORIES*/
+.grid-accessories{
+    border: 2px solid lightgray; /* Mengatur border */
+    padding: 10px; /* Memberi ruang di dalam border */
+    margin-bottom: 15px;
+    border-radius: 5px; /* Membuat border menjadi bulat */
+    
+}
+
+accessories{
+    font-family: /* your font family here */;
+    font-size: /* your font size here */;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SALE */
+
+
+
+
+
+
+
+
+/* SCALE & SIP*/
+.container-fluid{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    overflow: hidden;
+}
+
+.scaleNsip-banner {
+    position: relative;
+    width: auto; /* Adjust container size as needed */
+    height: 500px; /* Adjust container size as needed */
+    overflow: hidden;
+    
+}
+
+.scaleNsip-banner img,
+.scaleNsip-banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 1; /* Show the image by default */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.scaleNsip-banner img:hover {
+    opacity: 0; /* Hide the image on hover */
+}
+
+
+.scaleNsip-desc p {
+    margin-top: 0;
+    margin-bottom: -10px;; /* Adjust this value to control the gap within the paragraph */
+}
+
+.scaleNsip-desc{
+    color: #6F7476;
+    font-family: 'DM Sans';
+    font-size: 34px;
+    margin-bottom:40px;
+    margin-left:40px;
+    
+}
+.highlight{
+    color: black;
+    font-family: 'DM Sans';
+}
+
+label {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/* SCALE & SIP-INTERACTION*/
+
+#categoryDropdown1, #categoryDropdown2 {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.compare1, .compare2{
+    display: inline-block;
+}
+
+.result-image1 img{
+    animation: comparisonAnim1 1s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal forwards;
+}
+@keyframes comparisonAnim1 {
+    0% {
+        opacity: 1;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.result-image2 img{
+    animation: comparisonAnim2 1s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal forwards;
+}
+
+@keyframes comparisonAnim2 {
+    0% {
+        opacity: 1;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
