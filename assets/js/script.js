@@ -223,3 +223,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+VANTA.FOG({
+    el: "#animation-ourproduct",
+    mouseControls: false,
+    touchControls: false,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0xd4e4ee,
+    midtoneColor: 0xffffff,
+    lowlightColor: 0x7d95a7,
+    baseColor: 0xffffff,
+    blurFactor: 0.5,
+    speed: 1.20,
+    scale: 2,
+    scaleMobile: 4
+  });
