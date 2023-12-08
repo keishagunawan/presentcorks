@@ -351,8 +351,8 @@ accessories{
 }
 
 .new-text-style {
-    font-family: Arial, sans-serif; /* Contoh font-family */
-    font-size: 20px; /* Contoh font-size */
+    font-family: DM Sans, sans-serif;
+    font-size: 20px;
 }
 
 .grid-item-color-interactive {
@@ -361,21 +361,32 @@ accessories{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 2px;
     border: none;
-    flex: 1 0 calc(16.67% - 10px); /* Mengurangi lebar 10px dari margin */
-    padding: 5px;
+    flex: 1 0 calc(16.67% - 10px);
 }
 
 .color-interactive-middle {
     display: flex;
-    justify-content: center; /* Untuk menyelaraskan item di tengah secara horizontal */
-    flex-wrap: wrap; /* Mengizinkan item bungkus ke baris berikutnya jika tidak cukup ruang */
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
 .color-choice-active {
-    transform: scale(1.1); /* Membuat elemen 10% lebih besar */
-    transition: transform 0.3s ease; /* Mentransisi ukuran dengan efek memperhalus */
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+}
+
+
+color-title {
+    font-family: DM Sans, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+color-size {
+    font-family: SM Sans, sans-serif;
+    font-size: ;
 }
 
 

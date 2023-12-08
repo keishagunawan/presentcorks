@@ -196,19 +196,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /* COLOR-INTERACTIVE */
 function changeContentColorInteractive(imageSrc, newText, element) {
+    // Update the image and text as before
     document.getElementById('image').src = imageSrc;
     document.getElementById('text').textContent = newText;
     document.getElementById('text').className = 'new-text-style';
 
+    // Remove 'color-choice-active' class from all grid items
     var gridItems = document.querySelectorAll('.grid-item-color-interactive');
     gridItems.forEach(function(item) {
-        // Hanya menghilangkan kelas 'active' atau kelas yang menandai elemen aktif
-        item.classList.remove('grid-item-active'); // 'active' adalah contoh, ganti dengan kelas yang sesuai
+        item.classList.remove('grid-item-active', 'color-choice-active');
     });
 
-    // Tambahkan kelas 'active' hanya pada elemen yang diklik
-    element.classList.add('grid-item-active'); // 'active' adalah contoh, ganti dengan kelas yang sesuai
+    // Add 'grid-item-active' and 'color-choice-active' classes to the clicked element
+    element.classList.add('grid-item-active', 'color-choice-active');
 }
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -220,3 +222,4 @@ document.addEventListener('DOMContentLoaded', function() {
         gridItemToActivate.click();
     }
 });
+
